@@ -5,12 +5,13 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrmConsultaPai, Vcl.StdCtrls,
-  Vcl.ComCtrls, ufrmCadastroEstados, uEstados, uColEstados, uCtrlEstados,
+  Vcl.ComCtrls, ufrmCadastroEstados, uEstados, uCtrlEstados,
   Data.DB, Vcl.Grids, Vcl.DBGrids;
 
 type
   TFrmConsultaEstados = class(TFrmConsultaPai)
     procedure btnPesquisarClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
     umCadastroEstados : TFrmCadastroEstados;
@@ -39,6 +40,13 @@ implementation
 procedure TFrmConsultaEstados.btnPesquisarClick(Sender: TObject);
 begin
   aCtrlEstado.Pesquisar(self.EdtPesquisar.Text);
+end;
+
+procedure TFrmConsultaEstados.btnSairClick(Sender: TObject);
+begin
+  inherited;
+  if self.btnSair.Caption = 'Selecionar' then
+     actrlEstado.Carregar(oEstado);
 end;
 
 procedure TfrmConsultaEstados.ConhecaObj(pObj, pCtrl: TObject);

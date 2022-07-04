@@ -51,13 +51,6 @@ inherited FrmCadastroPessoa: TFrmCadastroPessoa
     Height = 13
     Caption = 'Cidade'
   end
-  object lblUF: TLabel [10]
-    Left = 330
-    Top = 179
-    Width = 13
-    Height = 13
-    Caption = 'UF'
-  end
   object edtEndereco: TEdit
     Left = 24
     Top = 91
@@ -104,23 +97,16 @@ inherited FrmCadastroPessoa: TFrmCadastroPessoa
   object edtCidade: TEdit
     Left = 112
     Top = 208
-    Width = 191
+    Width = 333
     Height = 21
     TabOrder = 11
   end
   object btnPesquisar: TButton
-    Left = 474
-    Top = 204
+    Left = 472
+    Top = 206
     Width = 75
     Height = 25
     Caption = 'Pesquisar'
     TabOrder = 12
-  end
-  object edtUF: TEdit
-    Left = 326
-    Top = 208
-    Width = 121
-    Height = 21
-    TabOrder = 13
   end
 end

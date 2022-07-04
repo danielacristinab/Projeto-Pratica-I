@@ -1,7 +1,7 @@
 unit uDAOPaises;
 
 interface
-uses uDAO, uColPaises, uPaises, Data.DB, System.SysUtils, Datasnap.DBClient;
+uses uDAO, uPaises, Data.DB, System.SysUtils, Datasnap.DBClient;
   type DAOPaises = class   (DAO)
     private
     protected

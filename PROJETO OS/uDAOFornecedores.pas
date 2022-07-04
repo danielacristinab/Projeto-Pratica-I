@@ -5,6 +5,7 @@ uses uDAO, uFornecedores, Data.DB, System.SysUtils;
   type DAOFornecedores = class   (DAO)
     private
     protected
+      oFonecedor : Fornecedores;
     public
       constructor CrieObj;
       function GetDS: TDataSource;                override;
@@ -45,9 +46,18 @@ begin
       begin
         mFornecedores := Fornecedores(pObj);
         mFornecedores.SetCodigo(umDM.qFornecedores.FieldByName('CODCIDADE').value);
-        //mFornecedores.SetCidade(umDM.qCidades.FieldByName('CIDADE').AsString);
-        //mFornecedores.SetDDD(umDM.qCidades.FieldByName('DDD').AsString);
-        mFornecedores.getaCidade.setCodigo(umDM.qFornecedores.FieldByName('oESTADO').Value);
+        mFornecedores.setCNPJ(umDM.qFornecedores.FieldByName('CNPJ').AsString);
+        mFornecedores.SetRazaoSocial(umDM.qFornecedores.FieldByName('RAZAOSOCIAL').AsString);
+        mFornecedores.SetApelidoNomeFantasia(umDM.qFornecedores.FieldByName('NOMEFANTASIA').AsString);
+        mFornecedores.setTelefone(umDM.qFornecedores.FieldByName('TELEFONE').AsString);
+        mFornecedores.setEmail(umDM.qFornecedores.FieldByName('EMAIL').AsString);
+        mFornecedores.SetRG_IE(umDM.qFornecedores.FieldByName('RG_IE').AsString);
+        mFornecedores.setEndereco(umDM.qFornecedores.FieldByName('ENDERECO').AsString);
+        mFornecedores.setNumero(umDM.qFornecedores.FieldByName('NUMERO').Value);
+        mFornecedores.setBairro(umDM.qFornecedores.FieldByName('BAIRRO').AsString);
+        mFornecedores.setCEP(umDM.qFornecedores.FieldByName('CEP').Value);
+        mFornecedores.setComplemento(umDM.qFornecedores.FieldByName('COMPLEMENTO').AsString);
+        mFornecedores.getaCidade.setCodigo(umDM.qFornecedores.FieldByName('aCIDADE').Value);
         result := '';
       end;
    except on e:exception do
@@ -63,11 +73,11 @@ var mSql: string;
 begin
   if pChave <> '' then
     if ehNumero(pChave) then
-      mSql := 'select * from Fornecedores where codcliente = '+quotedstr(pChave)
+      mSql := 'select * from Fornecedores where codFornecedor = '+quotedstr(pChave)
     else
-      mSql := 'select * from Fornecedores where nome = '+quotedstr(pChave)+' order by nome'
+      mSql := 'select * from Fornecedores where razaosocial = '+quotedstr(pChave)+' order by razaosocial'
   else
-    mSql := 'select * from Fornecedores order by nome';
+    mSql := 'select * from Fornecedores order by razaosocial';
   umDM.qFornecedores.Active := false;
   umDM.qFornecedores.SQL.Text := mSql;
   umDM.qFornecedores.Open();
@@ -83,19 +93,36 @@ begin
       with umDM.qFornecedores do
       begin
         if mFornecedores.getCodigo = 0 then
-        mSql := 'insert into Fornecedores (cidade, ddd, codestado) values ( :cidade, :ddd, :codestado)'
+        mSql := 'insert into Fornecedores (cnpj, razaocial, nomefantasia, telefone, email,'+
+                'site, rg_ie, endereco, numero, bairro, cep, complemento, codcidade) ' +
+                'values ( :cnpj, :razaosocial, :nomefantasia, :telefone, :email, :site,'+
+                ':rg_ie, :endereco, :numero, :bairro, :cep, :complemento, :codcidade)'
         else
         begin
-          mSql := 'update Fornecedores set fornecedor = :cidade , ddd = :ddd, codestado = :codestado';
-          mSql := mSql + 'where codFornecedor = :CodCidade;';
+          mSql := 'update Fornecedores set cnpj = :cnpj , razaocial = :razaosocial, '+
+                  'nomefantasia = :nomefantasia, telefone = :telefone, email = :email, '+
+                  'site = :site, rg_ie = :rg_ie, endereco = :endereco, numero = :numero, '+
+                  'bairro = :bairro, cep = :cep, complemento = :complemento,  '+
+                  'codcidade = :codcidade';
+          mSql := mSql + 'where codFornecedor = :CodFornecedor;';
         end;
         umDM.qFornecedores.SQL.Clear;
         umDM.qFornecedores.SQL.Add(mSql);
-        //ParamByName('CIDADE').Value := mFornecedores.getCidade;
-        //ParamByName('DDD').Value := mFornecedores.getDDD;
-        ParamByName('CODCIDADE').Value := mFornecedores.getaCidade.GetCidade;
+        ParamByName('CNPJ').Value := mFornecedores.GetCnpj;
+        ParamByName('RAZAOSOCIAL').Value := mFornecedores.GetRazaoSocial;
+        ParamByName('NOMEFANTASIA').Value := mFornecedores.GetApelidoNomeFantasia;
+        ParamByName('TELEFONE').Value := mFornecedores.getTelefone;
+        ParamByName('EMAIL').Value := mFornecedores.GetEmail;
+        ParamByName('SITE').Value := mFornecedores.GetSite;
+        ParamByName('RG_IE').Value := mFornecedores.GetRG_IE;
+        ParamByName('ENDERECO').Value := mFornecedores.getEndereco;
+        ParamByName('NUMERO').Value := mFornecedores.getNumero;
+        ParamByName('BAIRRO').Value := mFornecedores.getBairro;
+        ParamByName('CEP').Value := mFornecedores.getCEP;
+        ParamByName('COMPLEMENTO').Value := mFornecedores.getComplemento;
+        ParamByName('CODCIDADE').Value := mFornecedores.GetaCidade.GetCodigo;
         if mFornecedores.GetCodigo <> 0 then
-          ParamByName('CODCIDADE').Value := mFornecedores.GetCodigo;
+          ParamByName('CODFORNECEDOR').Value := mFornecedores.GetCodigo;
         ExecSQL;
       end;
       umDM.FDTrans.Commit;

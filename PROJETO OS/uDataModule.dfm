@@ -1,7 +1,7 @@
 object DM: TDM
   OldCreateOrder = False
-  Height = 438
-  Width = 739
+  Height = 572
+  Width = 857
   object FDTrans: TFDTransaction
     Connection = FDBanco
     Left = 144
@@ -20,11 +20,15 @@ object DM: TDM
     Top = 64
   end
   object qFornecedores: TFDQuery
+    Active = True
     Connection = FDBanco
+    SQL.Strings = (
+      'select * from fornecedores;')
     Left = 280
     Top = 304
   end
   object DSFornecedores: TDataSource
+    DataSet = qFornecedores
     Left = 360
     Top = 304
   end
@@ -71,7 +75,10 @@ object DM: TDM
     Top = 184
   end
   object qClientes: TFDQuery
+    Active = True
     Connection = FDBanco
+    SQL.Strings = (
+      'select * from clientes;')
     Left = 280
     Top = 248
   end
@@ -82,11 +89,26 @@ object DM: TDM
   end
   object qFuncionarios: TFDQuery
     Connection = FDBanco
+    SQL.Strings = (
+      'select * from funcionarios')
     Left = 280
     Top = 368
   end
   object DSFuncionarios: TDataSource
+    DataSet = qFuncionarios
     Left = 360
     Top = 368
+  end
+  object qCargos: TFDQuery
+    Connection = FDBanco
+    SQL.Strings = (
+      'select * from cargos;')
+    Left = 280
+    Top = 432
+  end
+  object DSCargos: TDataSource
+    DataSet = qCargos
+    Left = 360
+    Top = 432
   end
 end

@@ -9,8 +9,8 @@ type Fornecedores = class (Pessoa)
 	  ApelidoNomeFantasia : string[50];
 	  cnpj : string[15];
 	  RG_IE : string[15];
-	  site : string;
-    Telefone : string[13];
+	  site : string[50];
+    Telefone : string[20];
     Email : string[50];
  public
    constructor CrieObj;
@@ -33,12 +33,27 @@ type Fornecedores = class (Pessoa)
 end;
 implementation
 
-
 { Fornecedores }
 
 function Fornecedores.Clone: Fornecedores;
 begin
-
+    result := fornecedores.CrieObj;
+    result.setCodigo(codigo);
+    result.SetRazaoSocial(RazaoSocial);
+	  result.SetApelidoNomeFantasia(ApelidoNomeFantasia);
+	  result.Setcnpj(Cnpj);
+	  result.SetRG_IE(RG_IE);
+	  result.Setsite(Site);
+    result.SetTelefone(Telefone);
+    result.SetEmail(Email);
+    result.SetEndereco(Endereco);
+    result.SetNumero(numero);
+    result.SetBairro(bairro);
+    result.SetCep(cep);
+    result.SetComplemento(complemento);
+    result.SetaCidade(aCidade.Clone);
+    result.setDataCad(DataCad);
+    result.setDataCad(DataUltAlt);
 end;
 
 constructor Fornecedores.CrieObj;

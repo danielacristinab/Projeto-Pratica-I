@@ -2,16 +2,16 @@
 <BorlandProject>
 	<Transactions>
     <Transaction>2022/03/11 20:53:31.000.590,=D:\Usuario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
-    <Transaction>2022/03/11 20:57:43.000.289,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uPrincipal.dfm=D:\Usuario\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2022/03/11 20:57:43.000.289,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uPrincipal.pas=D:\Usuario\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2022/03/11 20:57:43.000.289,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uPrincipal.dfm=D:\Usuario\Documents\Embarcadero\Studio\Projects\Unit1.dfm</Transaction>
     <Transaction>2022/03/11 20:57:59.000.398,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\ProjetoOS.dproj=D:\Usuario\Documents\Embarcadero\Studio\Projects\Project1.dproj</Transaction>
     <Transaction>2022/03/11 20:58:09.000.806,=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/11 20:59:32.000.370,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uPessoa.pas=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/11 20:59:57.000.062,=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/11 21:00:06.000.335,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uPai.pas=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/11 21:05:36.000.338,=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit2.pas</Transaction>
-    <Transaction>2022/03/11 21:35:13.000.108,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCadastroPai.pas=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit2.pas</Transaction>
     <Transaction>2022/03/11 21:35:13.000.108,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCadastroPai.dfm=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit2.dfm</Transaction>
+    <Transaction>2022/03/11 21:35:13.000.108,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCadastroPai.pas=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit2.pas</Transaction>
     <Transaction>2022/03/19 14:34:41.000.182,=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/19 14:37:29.000.825,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCondicaoPagamento.pas=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/19 14:37:29.000.825,C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCondicaoPagamento.dfm=C:\Users\Daniela\Google Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm</Transaction>
@@ -25,8 +25,8 @@
     <Transaction>2022/03/30 21:39:06.000.655,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uController.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/30 21:45:13.000.521,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.pas</Transaction>
     <Transaction>2022/03/30 21:45:30.000.406,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/03/30 21:47:05.000.529,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uDataModule.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/03/30 21:47:05.000.529,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uDataModule.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm</Transaction>
+    <Transaction>2022/03/30 21:47:05.000.529,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uDataModule.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/04/02 13:51:37.000.872,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/04/02 15:06:31.000.813,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uOS.pas</Transaction>
     <Transaction>2022/04/02 15:06:41.000.916,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uEnderecos.pas=</Transaction>
@@ -37,20 +37,20 @@
     <Transaction>2022/04/02 15:41:26.000.554,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/04/02 15:41:33.000.945,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCidades.pas</Transaction>
     <Transaction>2022/04/06 13:32:31.000.086,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.pas</Transaction>
-    <Transaction>2022/04/06 13:35:51.000.919,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroPai.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.pas</Transaction>
     <Transaction>2022/04/06 13:35:51.000.919,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroPai.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.dfm</Transaction>
+    <Transaction>2022/04/06 13:35:51.000.919,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroPai.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.pas</Transaction>
     <Transaction>2022/04/06 13:36:56.000.039,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/04/06 13:38:09.000.469,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroPaises.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/04/06 13:38:09.000.469,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroPaises.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm</Transaction>
+    <Transaction>2022/04/06 13:38:09.000.469,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroPaises.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/04/06 13:39:30.000.748,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/04/06 13:40:45.000.386,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroCidades.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm</Transaction>
     <Transaction>2022/04/06 13:40:45.000.386,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroCidades.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/04/06 13:40:45.000.386,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroCidades.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm</Transaction>
     <Transaction>2022/04/06 13:40:58.000.223,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit2.pas</Transaction>
     <Transaction>2022/04/06 13:42:20.000.831,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroEstados.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit2.pas</Transaction>
     <Transaction>2022/04/06 13:42:20.000.831,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCadastroEstados.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit2.dfm</Transaction>
     <Transaction>2022/04/06 13:43:40.000.596,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.pas</Transaction>
-    <Transaction>2022/04/06 13:44:24.000.655,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaPai.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.pas</Transaction>
     <Transaction>2022/04/06 13:44:24.000.655,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaPai.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.dfm</Transaction>
+    <Transaction>2022/04/06 13:44:24.000.655,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaPai.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit3.pas</Transaction>
     <Transaction>2022/04/06 13:50:01.000.915,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/04/06 13:50:40.000.639,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uColCidades.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/04/06 13:50:56.000.104,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
@@ -77,11 +77,11 @@
     <Transaction>2022/04/19 12:41:48.000.133,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaPaises.dfm</Transaction>
     <Transaction>2022/04/19 12:41:48.000.133,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaPaises.pas</Transaction>
     <Transaction>2022/04/19 12:42:46.000.813,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/04/19 12:42:55.000.711,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaEstados.pas</Transaction>
     <Transaction>2022/04/19 12:42:55.000.711,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaEstados.dfm</Transaction>
+    <Transaction>2022/04/19 12:42:55.000.711,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaEstados.pas</Transaction>
     <Transaction>2022/04/19 12:43:42.000.335,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/04/19 12:44:09.000.276,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaCidades.pas</Transaction>
     <Transaction>2022/04/19 12:44:09.000.276,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaCidades.dfm</Transaction>
+    <Transaction>2022/04/19 12:44:09.000.276,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmConsultaCidades.pas</Transaction>
     <Transaction>2022/04/23 14:38:51.000.327,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCondicaoPagamento.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCondicaoPagamento.dfm</Transaction>
     <Transaction>2022/04/23 14:38:51.000.327,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uCondicaoPagamento.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uFrmCondicaoPagamento.pas</Transaction>
     <Transaction>2022/05/19 17:25:50.000.406,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO OS\uColecoes.pas=</Transaction>
@@ -104,14 +104,14 @@
     <Transaction>2022/06/18 15:34:14.000.604,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uCadastroClientes.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroClientes.dfm</Transaction>
     <Transaction>2022/06/18 15:34:14.000.604,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uCadastroClientes.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroClientes.pas</Transaction>
     <Transaction>2022/06/18 15:36:43.000.675,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/06/18 15:37:00.000.238,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroFuncionarios.dfm</Transaction>
     <Transaction>2022/06/18 15:37:00.000.238,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroFuncionarios.pas</Transaction>
+    <Transaction>2022/06/18 15:37:00.000.238,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroFuncionarios.dfm</Transaction>
     <Transaction>2022/06/18 15:37:30.000.644,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/06/18 15:37:40.000.907,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroFornecedor.pas</Transaction>
     <Transaction>2022/06/18 15:37:40.000.907,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroFornecedor.dfm</Transaction>
+    <Transaction>2022/06/18 15:37:40.000.907,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroFornecedor.pas</Transaction>
     <Transaction>2022/06/18 16:23:43.000.747,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
-    <Transaction>2022/06/18 16:24:00.000.242,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmConsultaClientes.dfm</Transaction>
     <Transaction>2022/06/18 16:24:00.000.242,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmConsultaClientes.pas</Transaction>
+    <Transaction>2022/06/18 16:24:00.000.242,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmConsultaClientes.dfm</Transaction>
     <Transaction>2022/06/18 16:24:26.000.591,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/06/18 16:25:02.000.142,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmConsultaFornecedores.pas</Transaction>
     <Transaction>2022/06/18 16:25:02.000.142,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmConsultaFornecedores.dfm</Transaction>
@@ -131,8 +131,18 @@
     <Transaction>2022/06/18 19:46:31.000.843,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFornecedores.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFornecedor.pas</Transaction>
     <Transaction>2022/06/18 19:47:23.000.801,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
     <Transaction>2022/06/18 19:47:31.000.583,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uDAOFornecedores.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:46:59.000.363,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:48:42.000.600,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroCargos.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:48:42.000.600,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmCadastroCargos.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm</Transaction>
+    <Transaction>2022/07/02 19:49:10.000.551,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:49:27.000.844,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmConsultaCargos.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:49:27.000.844,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uFrmConsultaCargos.dfm=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.dfm</Transaction>
+    <Transaction>2022/07/02 19:52:57.000.897,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:53:38.000.587,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uCtrlCargos.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:54:56.000.270,=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
+    <Transaction>2022/07/02 19:55:59.000.828,G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\uDAOCargos.pas=G:\Meu Drive\1. Faculdade\Sistemas de Informação\PROJETO PRATICA\PROJETO OS\Unit1.pas</Transaction>
   </Transactions>
-	<ProjectSortOrder AutoSort="0" SortType="1">
+	<ProjectSortOrder AutoSort="0" SortType="0">
     <File Path="uCargos.pas"/>
     <File Path="uCidades.pas"/>
     <File Path="uClientes.pas"/>
@@ -194,5 +204,11 @@
     <File Path="uPessoa.pas"/>
     <File Path="uPrincipal.pas"/>
     <File Path="uPrincipal.dfm"/>
+    <File Path="uFrmCadastroCargos.pas"/>
+    <File Path="uFrmCadastroCargos.dfm"/>
+    <File Path="uFrmConsultaCargos.pas"/>
+    <File Path="uFrmConsultaCargos.dfm"/>
+    <File Path="uCtrlCargos.pas"/>
+    <File Path="uDAOCargos.pas"/>
   </ProjectSortOrder>
 </BorlandProject>

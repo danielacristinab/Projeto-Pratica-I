@@ -87,13 +87,13 @@ begin
         else
         begin
           mSql := 'update Cidades set cidade = :cidade , ddd = :ddd, codestado = :codestado';
-          mSql := mSql + 'where codCidade = :CodCidade';
+          mSql := mSql + ' where codCidade = :CodCidade';
         end;
         umDM.qCidades.SQL.Clear;
         umDM.qCidades.SQL.Add(mSql);
         ParamByName('CIDADE').Value := mCidades.getCidade;
         ParamByName('DDD').Value := mCidades.getDDD;
-        ParamByName('CODESTADO').Value := mCidades.getoEstado.GetEstado;
+        ParamByName('CODESTADO').Value := mCidades.getoEstado.GetCodigo;
         if mCidades.GetCodigo <> 0 then
           ParamByName('CODCIDADE').Value := mCidades.GetCodigo;
         ExecSQL;

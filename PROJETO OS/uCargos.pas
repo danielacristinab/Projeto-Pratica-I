@@ -10,11 +10,21 @@ type Cargos = class (Pessoa)
      constructor CrieObj;
      procedure SetCargo(pCargo: string);
      function GetCargo : string;
+     function Clone : cargos;
      destructor Destrua_se;
 end;
 implementation
 
 { Cargos }
+
+function Cargos.Clone: cargos;
+begin
+  result := cargos.CrieObj;
+  result.SetCodigo(codigo);
+  result.SetCargo(cargo);
+  result.setDataCad(dataCad);
+  result.setDataCad(DataUltAlt);
+end;
 
 constructor Cargos.CrieObj;
 begin

@@ -5,7 +5,8 @@ uses
   uFrmConsultaPaises, uFrmConsultaEstados, uFrmConsultaCidades,
   uFrmCadastroPaises, uFrmCadastroEstados, uFrmCadastroCidades,
   uFrmConsultaClientes, uFrmConsultaFornecedores, uFrmConsultaFuncionarios,
-  uFrmCadastroClientes, uFrmCadastroFornecedor, uFrmCadastroFuncionarios;
+  uFrmCadastroClientes, uFrmCadastroFornecedor, uFrmCadastroFuncionarios,
+  uFrmCadastroCargos, uFrmConsultaCargos;
 type Interfaces = class
   private
 
@@ -16,6 +17,7 @@ type Interfaces = class
     umFrmConsultaClientes : TFrmConsultaClientes;
     umFrmConsultaFornecedores : TFrmConsultaFornecedores;
     umFrmConsultaFuncionarios : TFrmConsultaFuncionarios;
+    umFrmConsultaCargos : TFrmConsultaCargos;
 
     umFrmCadastroPaises  : TFrmCadastroPaises;
     umFrmCadastroEstados : TFrmCadastroEstados;
@@ -23,6 +25,7 @@ type Interfaces = class
     umFrmCadastroClientes : TFrmCadastroClientes;
     umFrmCadastroFornecedores : TFrmCadastroFornecedores;
     umFrmCadastroFuncionarios : TFrmCadastroFuncionarios;
+    umFrmCadastroCargos : TFrmCadastroCargos;
 
   public
     constructor CrieObj;
@@ -33,6 +36,8 @@ type Interfaces = class
     procedure PDClientes(pObj, pCtrl : TObject);
     procedure PDFornecedores(pObj, pCtrl : TObject);
     procedure PDFuncionarios(pObj, pCtrl : TObject);
+    procedure PDCargos(pObj, pCtrl : TObject);
+
 end;
 
 implementation
@@ -47,6 +52,7 @@ begin
   umFrmConsultaClientes := TFrmConsultaClientes.Create(nil);
   umFrmConsultaFornecedores := TFrmConsultaFornecedores.Create(nil);
   umFrmConsultaFuncionarios := TFrmConsultaFuncionarios.Create(nil);
+  umFrmConsultaCargos := TFrmConsultaCargos.Create(nil);
 
   umFrmCadastroPaises := TFrmCadastroPaises.Create(nil);
   umFrmCadastroEstados := TFrmCadastroEstados.Create(nil);
@@ -54,6 +60,7 @@ begin
   umFrmCadastroClientes := TFrmCadastroClientes.Create(nil);
   umFrmCadastroFuncionarios := TFrmCadastroFuncionarios.Create(nil);
   umFrmCadastrofornecedores := TFrmCadastroFornecedores.Create(nil);
+  umFrmCadastroCargos := TFrmCadastroCargos.Create(nil);
 
   umFrmConsultaPaises.SetCadastro(umFrmCadastroPaises);
   umFrmConsultaEstados.SetCadastro(umFrmCadastroEstados);
@@ -61,6 +68,7 @@ begin
   umFrmConsultaClientes.SetCadastro(umFrmCadastroClientes);
   umFrmConsultaFornecedores.SetCadastro(umFrmCadastroFornecedores);
   umFrmConsultaFuncionarios.SetCadastro(umFrmCadastroFuncionarios);
+  umFrmConsultaCargos.SetCadastro(umFrmCadastroCargos);
 
   umFrmCadastroEstados.SetConsulta(umFrmConsultaPaises);
   umFrmCadastroCidades.SetConsulta(umFrmConsultaEstados);
@@ -78,6 +86,7 @@ begin
   umFrmConsultaClientes.FreeInstance;
   umFrmConsultaFornecedores.FreeInstance;
   umFrmConsultaFuncionarios.FreeInstance;
+  umFrmConsultaCargos.FreeInstance;
 
   umFrmCadastroPaises.FreeInstance;
   umFrmCadastroEstados.FreeInstance;
@@ -85,6 +94,13 @@ begin
   umFrmCadastroClientes.FreeInstance;
   umFrmCadastroFuncionarios.FreeInstance;
   umFrmCadastrofornecedores.FreeInstance;
+  umFrmCadastroCargos.FreeInstance;
+end;
+
+procedure Interfaces.PDCargos(pObj, pCtrl: TObject);
+begin
+  umFrmConsultaCargos.ConhecaObj(pObj, pCtrl);
+  umFrmConsultaCargos.ShowModal;
 end;
 
 procedure Interfaces.PDCidades(pObj, pCtrl : TObject);

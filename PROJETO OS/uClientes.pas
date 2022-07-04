@@ -8,16 +8,16 @@ type Clientes = class (Pessoa)
     nome : string[50];
 	  DataNasc : string[8];
     RG : string[10];
-    CPF : string[11];
+    CPF_CNPJ : string[18];
     Email : string[50];
-    Telefone : string[13]; {(45)3523-3523}
-    Celular : string [20]; {+000 (45) 9 99323306}
+    Telefone : string[20];
+    Celular : string [20];
   public
    constructor CrieObj;
    procedure SetNome(pNome: string);
    procedure SetDataNasc(pDataNasc: string);
    procedure SetRG(pRG: string);
-   procedure SetCPF(pCPF: string);
+   procedure SetCPF_CNPJ(pCPF_CNPJ: string);
    procedure SetEmail(pEmail: string);
    procedure SetTelefone(pTelefone: string);
    procedure SetCelular(pCelular: string);
@@ -25,7 +25,7 @@ type Clientes = class (Pessoa)
    function GetNome : string;
    function GetDataNasc : string;
    function GetRG : string;
-   function GetCPF : string;
+   function GetCPF_CNPJ : string;
    function GetEmail : string;
    function GetTelefone : string;
    function GetCelular : string;
@@ -42,9 +42,16 @@ begin
   result.SetNome(nome);
   result.SetDataNasc(DataNasc);
   result.SetRG(RG);
-  result.SetCPF(cpf);
+  result.SetCPF_CNPJ(cpf_cnpj);
+  result.SetEmail(Email);
   result.SetTelefone(Telefone);
   result.SetCelular(Celular);
+  result.SetEndereco(Endereco);
+  result.SetNumero(numero);
+  result.SetBairro(bairro);
+  result.SetCep(cep);
+  result.SetComplemento(complemento);
+  result.SetaCidade(aCidade.Clone);
   result.setDataCad(DataCad);
   result.setDataCad(DataUltAlt);
 end;
@@ -54,7 +61,7 @@ begin
     nome := ' ';
    	DataNasc := ' ';
     RG := ' ';
-    CPF := ' ';
+    CPF_CNPJ := ' ';
     Email := ' ';
     Telefone := ' ';
     Celular := ' ';
@@ -70,9 +77,9 @@ begin
   result := Celular;
 end;
 
-function Clientes.GetCPF: string;
+function Clientes.GetCPF_CNPJ: string;
 begin
-  result := CPF;
+  result := CPF_CNPJ;
 end;
 
 function Clientes.GetDataNasc: string;
@@ -105,9 +112,9 @@ begin
   Celular := pCelular;
 end;
 
-procedure Clientes.SetCPF(pCPF: string);
+procedure Clientes.SetCPF_CNPJ(pCPF_CNPJ: string);
 begin
-  CPF := pCPF;
+  CPF_CNPJ := pCPF_CNPJ;
 end;
 
 procedure Clientes.SetDataNasc(pDataNasc: string);

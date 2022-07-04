@@ -84,13 +84,11 @@ begin
   inherited;
   if aCidade.GetCodigo <> 0 then
     self.edtCodigo.Text := inttostr(aCidade.GetCodigo);
-   edtCodigo.Text := inttostr (aCidade.GetCodigo);
-   edtCidade.Text := aCidade.GetCidade;
-   edtDDD.Text := aCidade.GetDDD;
-   edtCodEstado.Text := inttostr(aCidade.getoEstado.GetCodigo);
-   edtEstado.Text := aCidade.getoEstado.GetEstado;
-   edtDataCad.Text := aCidade.GetDataCad;
-   edtUltAlt.Text := aCidade.GetUltAlt;
+  edtCodigo.Text := inttostr(aCidade.GetCodigo);
+  edtCidade.Text := aCidade.GetCidade;
+  edtDDD.Text    := aCidade.GetDDD;
+  edtCodEstado.Text := inttostr(aCidade.getoEstado.GetCodigo);
+  edtEstado.Text  := aCidade.getoEstado.GetEstado;
 end;
 
 procedure TfrmCadastroCidades.DesbloqueiEdit;
@@ -100,8 +98,6 @@ begin
   edtDDD.Enabled := true;
   edtCodEstado.Enabled := true;
   edtEstado.Enabled := true;
-  edtDataCad.Enabled := true;
-  edtUltAlt.Enabled := true;
 end;
 
 procedure TfrmCadastroCidades.LimpaEdit;
@@ -110,8 +106,6 @@ begin
   edtDDD.Clear;
   edtCodEstado.Clear;
   edtEstado.Clear;
-  edtDataCad.Clear;
-  edtUltAlt.Clear;
 end;
 
 procedure TfrmCadastroCidades.Salvar;
@@ -145,9 +139,8 @@ begin
     aCidade.SetDDD(edtDDD.Text);
     aCidade.GetoEstado.SetCodigo(strtoint(edtCodEstado.Text));
     aCidade.GetoEstado.SetEstado(edtEstado.Text);
-
-    //  oEstado.SetDataCad(edtDataCad.Text);
-    //  oEstado.SetUltAlt(edtUltAlt.Text);
+    aCidade.SetDataCad(edtDataCad.Text);
+    aCidade.SetUltAlt(edtUltAlt.Text);
 
     aCtrlCidades.salvar(aCidade.Clone);
   end;

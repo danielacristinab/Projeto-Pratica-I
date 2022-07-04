@@ -126,11 +126,11 @@
         <DCCReference Include="uFrmConsultaCidades.pas">
             <Form>FrmConsultaCidades</Form>
         </DCCReference>
-        <DCCReference Include="uPai.pas"/>
-        <DCCReference Include="uPessoa.pas"/>
         <DCCReference Include="uFrmCondicaoPagamento.pas">
             <Form>FrmCondicaoPagamento</Form>
         </DCCReference>
+        <DCCReference Include="uPai.pas"/>
+        <DCCReference Include="uPessoa.pas"/>
         <DCCReference Include="uFornecedores.pas"/>
         <DCCReference Include="uDAO.pas"/>
         <DCCReference Include="uDAOCidades.pas"/>
@@ -139,6 +139,7 @@
         <DCCReference Include="uDAOClientes.pas"/>
         <DCCReference Include="uDAOFuncionarios.pas"/>
         <DCCReference Include="uDAOFornecedores.pas"/>
+        <DCCReference Include="uDAOCargos.pas"/>
         <DCCReference Include="uController.pas"/>
         <DCCReference Include="uCtrlEstados.pas"/>
         <DCCReference Include="uCtrlPaises.pas"/>
@@ -146,6 +147,7 @@
         <DCCReference Include="uCtrlClientes.pas"/>
         <DCCReference Include="uCtrlFuncionarios.pas"/>
         <DCCReference Include="uCtrlFornecedores.pas"/>
+        <DCCReference Include="uCtrlCargos.pas"/>
         <DCCReference Include="uDataModule.pas">
             <Form>DM</Form>
             <DesignClass>TDataModule</DesignClass>
@@ -170,6 +172,9 @@
         <DCCReference Include="uFrmCadastroFornecedor.pas">
             <Form>FrmCadastroFornecedores</Form>
         </DCCReference>
+        <DCCReference Include="uFrmCadastroCargos.pas">
+            <Form>FrmCadastroCargos</Form>
+        </DCCReference>
         <DCCReference Include="uFrmConsultaClientes.pas">
             <Form>FrmConsultaClientes</Form>
         </DCCReference>
@@ -178,6 +183,9 @@
         </DCCReference>
         <DCCReference Include="uFrmConsultaFuncionarios.pas">
             <Form>FrmConsultaFuncionarios</Form>
+        </DCCReference>
+        <DCCReference Include="uFrmConsultaCargos.pas">
+            <Form>FrmConsultaCargos</Form>
         </DCCReference>
         <BuildConfiguration Include="Release">
             <Key>Cfg_2</Key>

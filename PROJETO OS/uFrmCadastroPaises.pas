@@ -46,7 +46,6 @@ begin
   aCtrlPais := CtrlPaises(pCtrl);
   self.LimpaEdit;
   self.CarregaEdit;
-
 end;
 
 procedure TfrmCadastroPaises.BloqueiaEdit;
@@ -70,16 +69,15 @@ begin
 end;
 
 procedure TFrmCadastroPaises.edtPaisExit(Sender: TObject);
-var mX : string;
+//var mX : string;
 begin
-  inherited;
+{  inherited;
   mX := aCtrlPais.Pesquisar(edtPais.Text);
   if aCtrlPais.AcheiReg then
   begin
     showmessage(self.edtPais.Text + ', Ja cadastrado !!');
     self.edtPais.SetFocus;
-  end;
-
+  end; }
 end;
 
 procedure TfrmCadastroPaises.LimpaEdit;

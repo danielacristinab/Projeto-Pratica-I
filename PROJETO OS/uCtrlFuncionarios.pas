@@ -42,7 +42,7 @@ destructor CtrlFuncionarios.Destrua_se;
 begin
   aDaoFuncionarios.Destrua_se;
 end;
- // teste
+
 function CtrlFuncionarios.GetaCtrlCidade: CtrlCidades;
 begin
   result := aCtrlCidade;

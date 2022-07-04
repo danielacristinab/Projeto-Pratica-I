@@ -5,6 +5,7 @@ uses uDAO, uFuncionarios, Data.DB, System.SysUtils;
   type DAOFuncionarios = class   (DAO)
     private
     protected
+      oFuncionario : Funcionarios;
     public
       constructor CrieObj;
       function GetDS: TDataSource;                override;
@@ -45,9 +46,17 @@ begin
       begin
         mFuncionarios := Funcionarios(pObj);
         mFuncionarios.SetCodigo(umDM.qFuncionarios.FieldByName('CODFUNCIONARIO').value);
-        //mFuncionarios.SetCidade(umDM.qCidades.FieldByName('CIDADE').AsString);
-        //mFuncionarios.SetDDD(umDM.qCidades.FieldByName('DDD').AsString);
-        mFuncionarios.getaCidade.setCodigo(umDM.qFuncionarios.FieldByName('aCIDADE').Value);
+        mFuncionarios.SetNome(umDM.qFuncionarios.FieldByName('NOME').Value);
+        mFuncionarios.SetDataNasc(umDM.qFuncionarios.FieldByName('DATANASC').Value);
+        mFuncionarios.SetRG(umDM.qFuncionarios.FieldByName('RG').Value);
+        mFuncionarios.SetCPF(umDM.qFuncionarios.FieldByName('CPF').Value);
+        mFuncionarios.SetEmail(umDM.qFuncionarios.FieldByName('EMAIL').Value);
+        mFuncionarios.SetTelefone(umDM.qFuncionarios.FieldByName('TELEFONE').Value);
+        mFuncionarios.SetCelular(umDM.qFuncionarios.FieldByName('CELULAR').Value);
+        mFuncionarios.SetEndereco(umDM.qFuncionarios.FieldByName('ENDERECO').Value);
+
+        mFuncionarios.GetoCargo.SetCodigo(umDM.qFuncionarios.FieldByName('oCARGO').Value);
+        mFuncionarios.GetaCidade.setCodigo(umDM.qFuncionarios.FieldByName('aCIDADE').Value);
         result := '';
       end;
    except on e:exception do

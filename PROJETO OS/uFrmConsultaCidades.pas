@@ -11,6 +11,7 @@ uses
 type
   TFrmConsultaCidades = class(TFrmConsultaPai)
     procedure btnPesquisarClick(Sender: TObject);
+    procedure btnSairClick(Sender: TObject);
   private
     { Private declarations }
     umCadastroCidades : TFrmCadastroCidades;
@@ -50,6 +51,13 @@ end;
 procedure TFrmConsultaCidades.btnPesquisarClick(Sender: TObject);
 begin
   aCtrlCidade.Pesquisar(self.EdtPesquisar.Text);
+end;
+
+procedure TFrmConsultaCidades.btnSairClick(Sender: TObject);
+begin
+  inherited;
+  if self.btnSair.Caption = 'Selecionar' then
+     aCtrlCidade.Carregar(aCidade);
 end;
 
 procedure TfrmConsultaCidades.ConhecaObj(pObj, pCtrl: TObject);

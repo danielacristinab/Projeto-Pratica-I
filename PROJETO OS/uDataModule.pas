@@ -26,6 +26,8 @@ type
     DSClientes: TDataSource;
     qFuncionarios: TFDQuery;
     DSFuncionarios: TDataSource;
+    qCargos: TFDQuery;
+    DSCargos: TDataSource;
   private
     { Private declarations }
   public

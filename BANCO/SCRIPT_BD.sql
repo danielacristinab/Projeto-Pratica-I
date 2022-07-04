@@ -33,17 +33,23 @@ CREATE TABLE Cidades(
 
 alter table cidades add constraint fk_codEstados foreign key (codEstado) references Estados(codEstado);
 
+------------------------------------------------------------------------------------------------------------
+
+
 CREATE TABLE Clientes(
   CodCliente INTEGER PRIMARY KEY,
   Nome VARCHAR(50) NOT NULL,
   DataNasc VARCHAR(8) NOT NULL,
-  RG VARCHAR(10) NOT NULL,
+  RG VARCHAR(10),
   CPF_CNPJ VARCHAR(18) NOT NULL,
+  Email VARCHAR(50),
   Telefone VARCHAR(20),
   Celular VARCHAR(20) NOT NULL,
   Endereco VARCHAR(50) NOT NULL,
-  Numero VARCHAR(5) NOT NULL,
+  Numero INTEGER NOT NULL,
   Bairro VARCHAR(50) NOT NULL,
+  CEP INTEGER NOT NULL,
+  Complemento VARCHAR(25),
   CodCidade INTEGER NOT NULL,
   DatCad  DATE,
   DatUltAlt DATE
@@ -55,37 +61,51 @@ alter table clientes add constraint fk_codCidades foreign key (codCidade) refere
 CREATE TABLE Funcionarios(
   CodFunc INTEGER PRIMARY KEY,
   Nome VARCHAR(50) NOT NULL,
-  DataNasc VARCHAR(3) NOT NULL,
-  CPF INTEGER NOT NULL,
-  NumMatricula INTEGER NOT NULL,
+  DataNasc VARCHAR(8) NOT NULL,
+  CPF VARCHAR(18) NOT NULL,
+  RG VARCHAR(10) NOT NULL,
+  Email VARCHAR(50),
+  Telefone VARCHAR(20),
+  Celular VARCHAR(20) NOT NULL, 
+  Endereco VARCHAR(50) NOT NULL,
+  Numero INTEGER NOT NULL,
+  Bairro VARCHAR(50) NOT NULL,
+  CEP INTEGER NOT NULL,
+  Complemento VARCHAR(25),
   CodCargo INTEGER NOT NULL,
+  CodCidade INTEGER NOT NULL,
   DatCad  DATE,
   DatUltAlt DATE
  );
- 
+
  alter table funcionarios add constraint fk_codCargos foreign key (codCargo) references Cargos(codCargo);
+ alter table funcionarios add constraint fk_codCidadesFunc foreign key (codCidade) references Cidades(codCidade);
 
 CREATE TABLE Cargos(
   CodCargo INTEGER PRIMARY KEY,
-  Cargo VARCHAR(50) NOT NULL,
+  Cargo VARCHAR(25) NOT NULL,
   DatCad  DATE,
   DatUltAlt DATE
  );
  
 CREATE TABLE Fornecedores(
   CodFornecedor INTEGER PRIMARY KEY,
+  Cnpj VARCHAR(18) NOT NULL,
   RazaoSocial VARCHAR(50) NOT NULL,
+  NomeFantasia VARCHAR(50) NOT NULL,
   Telefone VARCHAR(20) NOT NULL,
   Email VARCHAR(50) NOT NULL,
+  Site VARCHAR(50),
+  RG_IE VARCHAR(15) NOT NULL,
   Endereco VARCHAR(50) NOT NULL,
+  Numero INTEGER NOT NULL,
+  Bairro VARCHAR(50) NOT NULL,
+  CEP INTEGER NOT NULL,
+  Complemento VARCHAR(25),
   CodCidade INTEGER NOT NULL,
   DatCad  DATE,
   DatUltAlt DATE
  ); 
 
-alter table fornecedores add constraint fk_codCidades foreign key (codCidade) references Cidades(codCidade);
-
-
-
-
+alter table fornecedores add constraint fk_codCidadesForn foreign key (codCidade) references Cidades(codCidade);
 

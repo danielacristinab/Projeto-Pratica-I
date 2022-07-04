@@ -5,6 +5,7 @@ uses uDAO, uClientes, Data.DB, System.SysUtils;
   type DAOClientes = class   (DAO)
     private
     protected
+      oCliente : Clientes;
     public
       constructor CrieObj;
       function GetDS: TDataSource;                override;
@@ -44,10 +45,20 @@ begin
       with umDM.qClientes DO
       begin
         mClientes := Clientes(pObj);
-        mClientes.SetCodigo(umDM.qCidades.FieldByName('CODCIDADE').value);
-        //mClientes.SetCidade(umDM.qCidades.FieldByName('CIDADE').AsString);
-        //mClientes.SetDDD(umDM.qCidades.FieldByName('DDD').AsString);
-        mClientes.getaCidade.setCodigo(umDM.qClientes.FieldByName('oESTADO').Value);
+        mClientes.SetCodigo(umDM.qClientes.FieldByName('CODCLIENTE').value);
+        mClientes.setNome(umDM.qClientes.FieldByName('NOME').AsString);
+        mClientes.setDataNasc(umDM.qClientes.FieldByName('DATANASC').AsString);
+        mClientes.setRG(umDM.qClientes.FieldByName('RG').AsString);
+        mClientes.setCPF_CNPJ(umDM.qClientes.FieldByName('CPF_CNPJ').AsString);
+        mClientes.setEmail(umDM.qClientes.FieldByName('EMAIL').AsString);
+        mClientes.setTelefone(umDM.qClientes.FieldByName('TELEFONE').AsString);
+        mClientes.setCelular(umDM.qClientes.FieldByName('CELULAR').AsString);
+        mClientes.setEndereco(umDM.qClientes.FieldByName('ENDERECO').AsString);
+        mClientes.setNumero(umDM.qClientes.FieldByName('NUMERO').Value);
+        mClientes.setBairro(umDM.qClientes.FieldByName('BAIRRO').AsString);
+        mClientes.setCEP(umDM.qClientes.FieldByName('CEP').Value);
+        mClientes.setComplemento(umDM.qClientes.FieldByName('COMPLEMENTO').AsString);
+        mClientes.getaCidade.setCodigo(umDM.qClientes.FieldByName('aCIDADE').Value);
         result := '';
       end;
    except on e:exception do
@@ -83,19 +94,35 @@ begin
       with umDM.qClientes do
       begin
         if mClientes.getCodigo = 0 then
-        mSql := 'insert into Cidades (cidade, ddd, codestado) values ( :cidade, :ddd, :codestado)'
+        mSql := 'insert into Clientes (nome, datanasc, rg, cpf_cnpj, email, telefone,' +
+        'celular, endereco, numero, bairro, cep, complemento, codcidade)' +
+        'values ( :nome, :datanasc, :rg, :cpf_cnpj, :email, :telefone, :celular,' +
+        ':endereco, :numero, :bairro, :cep, :complemento, :codcidde)'
         else
         begin
-          mSql := 'update Cidades set cidade = :cidade , ddd = :ddd, codestado = :codestado';
-          mSql := mSql + 'where codCidade = :CodCidade;';
+          mSql := 'update Clientes set nome = :nome , datanasc = :datanasc, rg = :rg,'+
+          'cpf_cnpj = :cpf_cnpj, email = :email, telefone = :telefone, celular = :celular,'+
+          'endereco = :endereco, numero = :numero, bairro = :bairro, cep = :cep,'+
+          'complemento = :complemento,  codcidade = :codcidade';
+          mSql := mSql + 'where codCliente = :CodCliente;';
         end;
         umDM.qClientes.SQL.Clear;
         umDM.qClientes.SQL.Add(mSql);
-        //ParamByName('CIDADE').Value := mClientes.getCidade;
-        //ParamByName('DDD').Value := mClientes.getDDD;
-        ParamByName('CODCIDADE').Value := mClientes.getaCidade.GetCidade;
+        ParamByName('NOME').Value := mClientes.getNome;
+        ParamByName('DATANASC').Value := mClientes.getDataNasc;
+        ParamByName('RG').Value := mClientes.getDataNasc;
+        ParamByName('CPF_CNPJ').Value := mClientes.getCPF_CNPJ;
+        ParamByName('EMAIL').Value := mClientes.getEmail;
+        ParamByName('TELEFONE').Value := mClientes.getTelefone;
+        ParamByName('CELULAR').Value := mClientes.getCelular;
+        ParamByName('ENDERECO').Value := mClientes.getEndereco;
+        ParamByName('NUMERO').Value := mClientes.getNumero;
+        ParamByName('BAIRRO').Value := mClientes.getBairro;
+        ParamByName('CEP').Value := mClientes.getCEP;
+        ParamByName('COMPLEMENTO').Value := mClientes.getComplemento;
+        ParamByName('CODCIDADE').Value := mClientes.GetaCidade.GetCodigo;
         if mClientes.GetCodigo <> 0 then
-          ParamByName('CODCIDADE').Value := mClientes.GetCodigo;
+          ParamByName('CODCLIENTE').Value := mClientes.GetCodigo;
         ExecSQL;
       end;
       umDM.FDTrans.Commit;

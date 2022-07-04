@@ -23,8 +23,6 @@ type
     lblCodCidade: TLabel;
     lblCidade: TLabel;
     btnPesquisar: TButton;
-    edtUF: TEdit;
-    lblUF: TLabel;
     procedure btnSalvarClick(Sender: TObject);
     procedure btnSairClick(Sender: TObject);
   private

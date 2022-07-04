@@ -48,7 +48,7 @@ inherited FrmCadastroFuncionarios: TFrmCadastroFuncionarios
     Height = 13
     Caption = 'Celular'
   end
-  object lblEmail: TLabel [17]
+  object lblEmail: TLabel [16]
     Left = 417
     Top = 251
     Width = 28
@@ -63,56 +63,53 @@ inherited FrmCadastroFuncionarios: TFrmCadastroFuncionarios
     Left = 25
     ExplicitLeft = 25
   end
-  object edtNome: TEdit [31]
+  object edtNome: TEdit
     Left = 75
     Top = 45
     Width = 624
     Height = 21
     TabOrder = 13
   end
-  object edtDataNasc: TEdit [32]
+  object edtDataNasc: TEdit
     Left = 515
     Top = 323
     Width = 103
     Height = 21
     TabOrder = 14
   end
-  object edtRG: TEdit [33]
+  object edtRG: TEdit
     Left = 24
     Top = 323
     Width = 223
     Height = 21
     TabOrder = 15
   end
-  object edtCPF: TEdit [34]
+  object edtCPF: TEdit
     Left = 265
     Top = 323
     Width = 218
     Height = 21
     TabOrder = 16
   end
-  object edtTelefone: TEdit [35]
+  object edtTelefone: TEdit
     Left = 24
     Top = 270
     Width = 129
     Height = 21
     TabOrder = 17
   end
-  object edtCelular: TEdit [36]
+  object edtCelular: TEdit
     Left = 176
     Top = 270
     Width = 223
     Height = 21
     TabOrder = 18
   end
-  inherited edtUF: TEdit
-    TabOrder = 19
-  end
   object edtEmail: TEdit
     Left = 417
     Top = 270
     Width = 282
     Height = 21
-    TabOrder = 20
+    TabOrder = 19
   end
 end

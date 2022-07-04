@@ -1,7 +1,7 @@
 unit uDAOEstados;
 
 interface
-uses uDAO, uColEstados, uEstados, Data.DB, System.SysUtils;
+uses uDAO, uEstados, Data.DB, System.SysUtils;
   type DAOEstados = class   (DAO)
     private
     protected

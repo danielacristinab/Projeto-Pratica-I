@@ -5,7 +5,7 @@ interface
 uses
   Winapi.Windows, Winapi.Messages, System.SysUtils, System.Variants, System.Classes, Vcl.Graphics,
   Vcl.Controls, Vcl.Forms, Vcl.Dialogs, uFrmCadastroPessoa, Vcl.StdCtrls,
-  uFrmConsultaFuncionarios, uFrmConsultaCidades, uFuncionarios, uCtrlFuncionarios;
+  uFrmConsultaCidades, uFuncionarios, uCtrlFuncionarios;
 
 type
   TFrmCadastroFuncionarios = class(TFrmCadastroPessoa)
@@ -52,6 +52,20 @@ implementation
 procedure TFrmCadastroFuncionarios.BloqueiaEdit;
 begin
   inherited;
+  edtCodigo.Enabled := false;
+  edtNome.Enabled := false;
+  edtDataNasc.Enabled := false;
+  edtRg.Enabled := false;
+  edtCPF.Enabled := false;
+  edtTelefone.Enabled := false;
+  edtCelular.Enabled := false;
+  edtEndereco.Enabled := false;
+  edtNumero.Enabled := false;
+  edtCep.Enabled := false;
+  edtBairro.Enabled := false;
+  edtComplemento.Enabled := false;
+  edtCodCidade.Enabled := false;
+  edtCidade.Enabled := false;
   edtDataCad.Enabled := false;
   edtUltAlt.Enabled := false;
 end;
@@ -59,7 +73,17 @@ end;
 procedure TFrmCadastroFuncionarios.CarregaEdit;
 begin
   inherited;
-
+  if oFuncionario.GetCodigo <> 0 then
+    self.edtCodigo.Text := inttostr(oFuncionario.GetCodigo);
+  edtCodigo.Text := inttostr (oFuncionario.GetCodigo);
+  edtNome.Text := oFuncionario.GetNome;
+  edtDataNasc.Text := oFuncionario.GetDataNasc;
+  edtRg.Text := oFuncionario.GetRG;
+  edtCPF.Text := oFuncionario.GetCPF;
+  edtTelefone.Text := oFuncionario.GetTelefone;
+  edtCelular.Text := oFuncionario.GetCelular;
+  edtCodCidade.Text := inttostr(oFuncionario.getaCidade.GetCodigo);
+  edtCidade.Text := oFuncionario.getaCidade.GetCidade;
   edtDataCad.Text := oFuncionario.GetDataCad;
   edtUltAlt.Text := oFuncionario.GetUltAlt;
 end;
@@ -76,15 +100,39 @@ end;
 procedure TFrmCadastroFuncionarios.DesbloqueiEdit;
 begin
   inherited;
-  edtDataCad.Enabled := true;
-  edtUltAlt.Enabled := true;
+  edtCodigo.Enabled := true;
+  edtNome.Enabled := true;
+  edtDataNasc.Enabled := true;
+  edtRg.Enabled := true;
+  edtCPF.Enabled := true;
+  edtTelefone.Enabled := true;
+  edtCelular.Enabled := true;
+  edtEndereco.Enabled := true;
+  edtNumero.Enabled := true;
+  edtCep.Enabled := true;
+  edtBairro.Enabled := true;
+  edtComplemento.Enabled := true;
+  edtCodCidade.Enabled := true;
+  edtCidade.Enabled := true;
 end;
 
 procedure TFrmCadastroFuncionarios.LimpaEdit;
 begin
   inherited;
-  edtDataCad.Clear;
-  edtUltAlt.Clear;
+  edtCodigo.Text := '0';
+  edtNome.Clear;
+  edtDataNasc.Clear;
+  edtRg.Clear;
+  edtCPF.Clear;
+  edtTelefone.Clear;
+  edtCelular.Clear;
+  edtEndereco.Clear;
+  edtNumero.Clear;
+  edtCep.Clear;
+  edtBairro.Clear;
+  edtComplemento.Clear;
+  edtCodCidade.Clear;
+  edtCidade.Clear;
 end;
 
 procedure TFrmCadastroFuncionarios.Sair;
